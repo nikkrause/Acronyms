@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+.arrow {width:20px; height:30px; position:absolute; right:10px; top:4px;}
+
+.arrow>span {width:10px; height:3px; position:absolute; left:1px; top:13px; background-color:#00529B; display:block; border-radius:2px; -webkit-transition:transform 0.2s; transition:transform 0.2s; -ms-transform:rotate(30deg); -webkit-transform:rotate(30deg); transform:rotate(30deg);}
+
+.arrow>span+span {right:1px; left:auto; -ms-transform:rotate(-30deg); -webkit-transform:rotate(-30deg); transform:rotate(-30deg);}
+
+.open .arrow>span {-ms-transform:rotate(-30deg); -webkit-transform:rotate(-30deg); transform:rotate(-30deg);}
+
+.open .arrow>span+span {-ms-transform:rotate(30deg); -webkit-transform:rotate(30deg); transform:rotate(30deg);}
